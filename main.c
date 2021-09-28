@@ -169,7 +169,7 @@ int main() {
 
                                scanf("%lf", &loggedSum);
 
-                               if(loggedSum < user.balance) {
+                               if(loggedSum <= user.balance) {
                                    //if you have this cash in your acc SEND IT TO number
                                    fread(&user1, sizeof(struct userDetails), 1,fp);
                                    fclose(fp);
@@ -256,6 +256,5 @@ int main() {
 
 
     } while(choice != 0);
-
 
 }
